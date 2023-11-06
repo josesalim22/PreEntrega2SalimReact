@@ -1,0 +1,39 @@
+.card-item {
+     border: 1px solid #ddd;
+     padding: 1rem;
+     margin: 1rem;
+     max-width: 300px;
+     background-color: #fff;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   }
+   
+   .card-header {
+     background-color: #333;
+     color: #fff;
+     padding: 0.5rem;
+     text-align: center;
+   }
+   
+   .item-header {
+     margin: 0;
+   }
+   
+   .item-img {
+     max-width: 100%;
+     height: auto;
+     display: block;
+   }
+   
+   .info {
+     margin: 0.5rem 0;
+   }
+   
+   .item-footer {
+     text-align: center;
+   }
+   
+   .option {
+     text-decoration: none;
+     color: #ff5733; 
+   }
+   
