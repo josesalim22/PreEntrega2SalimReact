@@ -33,4 +33,18 @@
      text-align: center;
    }
    
+   .option {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .option:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
    
