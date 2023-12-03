@@ -1,11 +1,13 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 
 export const CartContext = createContext({
      cart: []
 })
 
+const carritoInicial = JSON.parse(localStorage.getItem("carrito")) || [];
+
 export const CartProvider = ({ children }) => {
-     const [cart, setCart] = useState([])
+     const [cart, setCart] = useState(carritoInicial);
 
      console.log(cart)
 
@@ -14,6 +16,11 @@ export const CartProvider = ({ children }) => {
                setCart(prev => [...prev, { ...item, quantity }])
           } else {
                console.error('El producto ya fue agregado')
+               /* const confirmed = window.confirm('El producto ya fue agregado. ¿Deseas ir al carrito?');
+               if (confirmed) {
+                 window.location.href = '/cart'; 
+               } */
+
           }
      }
 
@@ -33,11 +40,15 @@ export const CartProvider = ({ children }) => {
 
      const totalQuantity = () => {
           return cart.reduce((acc, prod) => acc + prod.quantity, 0);
-          
-      }
-      const total = () => {
+
+     }
+     const total = () => {
           return cart.reduce((acc, prod) => acc + prod.price * prod.quantity, 0);
-      }
+     }
+
+useEffect(() => {
+localStorage.setItem("carrito", JSON.stringify(cart))   
+},[cart])
 
 
      return (
