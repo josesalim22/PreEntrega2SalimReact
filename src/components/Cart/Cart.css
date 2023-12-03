@@ -1,0 +1,34 @@
+
+
+   .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px; 
+  }
+  
+  .button-checkout {
+    background-color: #ff5733; 
+    color: #fff;
+    padding: 0.7rem 1rem;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+  }
+
+    .Button-limpiar {
+    background-color: #ff5733; 
+    color: #fff;
+    padding: 0.7rem 1rem;
+    max-width: 300px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
