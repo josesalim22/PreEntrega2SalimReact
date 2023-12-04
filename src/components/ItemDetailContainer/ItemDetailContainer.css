@@ -5,4 +5,8 @@
      height: 100vh; 
     
    }
-   
+   .error-message {
+    color: red; 
+    font-size: 18px; 
+
+  }
