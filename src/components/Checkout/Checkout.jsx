@@ -1,3 +1,4 @@
+import './Checkout.css';
 import { useContext, useState } from 'react'
 import { CartContext } from '../../context/CartContext'
 import { getDocs, collection, query, where, addDoc, writeBatch, Timestamp, documentId } from 'firebase/firestore'
@@ -68,11 +69,18 @@ const Checkout = () => {
           }
      }
      if (loading) {
-          return <h1>Se esta generando su orden...</h1>
+          return <h1 className="loading-message">Se esta generando su orden...</h1>
      }
 
      if (orderId) {
-          return <h1>El id de su orden es: {orderId}</h1>
+          return (
+               <div>
+                 <h1 className="order-id-message">
+                   El ID de su orden es: <span>{orderId}</span>
+                 </h1>
+                 <h2>Gracias por su compra</h2>
+               </div>
+             )
      }
 
 

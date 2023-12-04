@@ -1,0 +1,16 @@
+
+h1 {
+
+     margin-bottom: 16px;
+
+   }
+   
+
+   h1.loading-message {
+     color: #007bff; 
+   }
+
+   h1.order-id-message span{
+     color: #28a745; 
+   }
+   
