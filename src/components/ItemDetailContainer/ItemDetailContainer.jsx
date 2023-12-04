@@ -38,7 +38,7 @@ const ItemDetailContainer = () => {
   }
 
   if (!product) {
-    return <h2 className='error-message'>El producto no existe.</h2>;
+    return <h2 className='error-message'>El producto no existe</h2>;
   }
 
   return (
