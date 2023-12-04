@@ -9,17 +9,11 @@ const carritoInicial = JSON.parse(localStorage.getItem("carrito")) || [];
 export const CartProvider = ({ children }) => {
      const [cart, setCart] = useState(carritoInicial);
 
-     console.log(cart)
-
-     const addItem = (item, quantity) => {
+        const addItem = (item, quantity) => {
           if (!isInCart(item.id)) {
                setCart(prev => [...prev, { ...item, quantity }])
           } else {
                console.error('El producto ya fue agregado')
-               /* const confirmed = window.confirm('El producto ya fue agregado. ¿Deseas ir al carrito?');
-               if (confirmed) {
-                 window.location.href = '/cart'; 
-               } */
 
           }
      }

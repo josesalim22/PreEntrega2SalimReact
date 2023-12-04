@@ -5,8 +5,6 @@ import { getDocs, collection, query, where, addDoc, writeBatch, Timestamp, docum
 import { db } from "../../services/firebase/firebaseConfig"
 import CheckoutForm from '../CheckoutForm/CheckoutForm'
 
-
-
 const Checkout = () => {
      const [loading, setLoading] = useState(false)
      const [orderId, setOrderId] = useState('')
@@ -27,9 +25,9 @@ const Checkout = () => {
                }
                const batch = writeBatch(db)
                const outOfStock = []
-               console.log(objOrder)
+              
                const ids = cart.map(prod => prod.id)
-               console.log(ids)
+             
                const productsRef = collection(db, 'products')
 
                const productsAddedFromFirestore = await getDocs(query(productsRef, where(documentId(), 'in', ids)))
@@ -59,7 +57,7 @@ const Checkout = () => {
                     setOrderId(orderAdded.id)
                     clearCart()
                } else {
-                    console.error('hay productos que estan fuera de stock')
+                    console.error('hay productos que estan sin stock')
                }
 
           } catch (error) {
