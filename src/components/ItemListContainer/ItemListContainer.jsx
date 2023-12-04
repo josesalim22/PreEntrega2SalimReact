@@ -1,3 +1,4 @@
+import './ItemListContainer.css';
 import React, { useEffect, useState } from 'react'
 import ItemList from '../ItemList/ItemList'
 import { useParams } from 'react-router-dom'
@@ -7,6 +8,7 @@ import { db } from '../../services/firebase/firebaseConfig'
 const ItemListContainer = ({ greeting }) => {
 
     const [products, setProducts] = useState([])
+    const [loading, setLoading] = useState(true)
 
     const { categoryId } = useParams()
 
@@ -25,7 +27,18 @@ const ItemListContainer = ({ greeting }) => {
             .catch(error => {
                 console.error(error)
             })
+            .finally(() => {
+                setLoading(false)
+            })
     }, [categoryId])
+
+    if (loading) {
+        return <p>Cargando...</p>;
+      }
+
+    if (products.length === 0) {
+        return <h2 className='error-message'>No hay productos en la categoría especificada.</h2>;
+      }
 
     return (
         <div>
