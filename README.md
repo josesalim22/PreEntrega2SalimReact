@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+# Proyecto Tienda Digital Dreams
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+_Tienda Digital Dreams es una app de e-commerce diseñado como proyecto del curso de React de [Coderhouse](https://www.coderhouse.com/), dedicado a ofrecer productos electrónicos, incluyendo celulares, tablets y notebooks. El objetivo principal de este proyecto es brindar una experiencia de aprendizaje práctica utilizando React_
 
-## Available Scripts
+## Screenshot
 
-In the project directory, you can run:
+[![Tienda-Digital-Dreams.png](https://i.postimg.cc/vmW74fZ0/Tienda-Digital-Dreams.png)](https://postimg.cc/7CZJcC7z)
 
-### `npm start`
+> Imagen de la portada del sitio.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[![Tienda-Digital-Dreams-2.png](https://i.postimg.cc/TwxrX1GB/Tienda-Digital-Dreams-2.png)](https://postimg.cc/B8h8TqjC)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> Imagen del carrito.
 
-### `npm test`
+## Funcionalidades Principales
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Exploración de Productos:** Descubre y explora nuestra amplia selección de productos electrónicos.
+- **Detalles del Producto:** Obtén información detallada sobre cada producto, incluyendo imágenes, descripción y precio.
+- **Filtrado por Categoría:** Navega fácilmente por categorías utilizando el menú de navegación o escribiendo el nombre de la categoría directamente en la barra de navegación.
+- **Detalles del Producto por ID:** Accede directamente a los detalles de un producto específico utilizando su ID en la URL.
+- **Carrito de Compras:** Agrega productos al carrito y visualiza un resumen de tus selecciones.
+- **Acceso Rápido al Carrito:** Accede al carrito desde el navbar o la barra de navegación.
+- **Persistencia de Datos:** Los productos en el carrito se almacenan en el Local Storage para mantener la información entre sesiones.
 
-### `npm run build`
+## Proceso de Compra
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Carrito de Compras:** Visualiza y gestiona los productos en tu carrito.
+2. **Detalles del Producto en el Carrito:** Mira el nombre, cantidad a comprar, precio unitario y subtotal de cada producto.
+3. **Eliminar Productos:** Elimina productos individualmente con un botón "Eliminar".
+4. **Total de la Compra:** Visualiza el total de todos los productos en tu carrito.
+5. **Limpiar Carrito:** Elimina todos los productos del carrito con un botón "Limpiar Carrito".
+6. **Checkout:** Finaliza tu compra ingresando tus datos personales (nombre, teléfono, email) y crea tu orden.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Almacenamiento en Firebase
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Colección de Productos:** Todos los productos están almacenados en una colección en Firebase.
+- **Colección de Órdenes:** Las órdenes generadas se guardan en otra colección en Firebase, incluyendo información detallada sobre los productos y la fecha de la orden.
 
-### `npm run eject`
+## Demostración en Vivo 🚀
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Puedes explorar una demostración del proyecto en vivo a través de Vercel. Para acceder a la demo, visita el siguiente enlace:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[**Demo del Proyecto en Vercel**](https://tienda-digital-dreams-salim-react.vercel.app/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+¡Esperamos que disfrutes explorando la Tienda DigitalDreams en acción!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Tecnologías utilizadas 📋
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Lista de tecnologías usadas en el proyecto:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+- React: Librería de JavaScript para construir interfaces de usuario.
+- Firebase: Plataforma de desarrollo web para la gestión de base de datos y autenticación.
+- CSS: Estilos y diseño.
+```
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Construido con 🛠️
 
-### Analyzing the Bundle Size
+* [Visual Studio Code](https://code.visualstudio.com/) - El editor de codigo usado
+* [Git](https://git-scm.com/) - Usado para versionado y repositorio local
+* [GitHub](https://github.com/) - Usado para versionado y para alojar el repositorio Git
+* [Node.js](https://nodejs.org/es) - Necesario para npm y React
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Uso 🔧
 
-### Making a Progressive Web App
+Para utilizar o ejecutar el proyecto localmente y realizar modificaciones, sigue estos pasos:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Clona el repositorio en tu máquina local utilizando el siguiente comando en tu terminal:
 
-### Advanced Configuration
+```
+git clone https://github.com/josesalim22/TiendaDigitalDreams-SalimReact.git
+```
+>Tambien puedes descargar en formato zip desde -Code -opcion Download Zip
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+2. Abre el proyecto clonado en tu editor de código favorito.
 
-### Deployment
+3. Instala las dependencias:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
+cd tu-repositorio
+npm install
 
-### `npm run build` fails to minify
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. Inicia la aplicación:
+
+```
+npm start
+
+```
+_Esperamos que disfrutes tu experiencia de compra en la Tienda DigitalDreams._
+_Si deseas contribuir al proyecto, puedes comunicarte conmigo._
+
+## Autor ✒️
+
+* **José Salim** - *Diciembre de 2023* - [josesalim22](https://github.com/josesalim22/)
