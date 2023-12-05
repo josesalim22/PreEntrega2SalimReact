@@ -14,19 +14,19 @@ _Tienda Digital Dreams es una app de e-commerce diseñado como proyecto del curs
 
 ## Funcionalidades Principales
 
-- **Exploración de Productos:** Descubre y explora nuestra amplia selección de productos electrónicos.
-- **Detalles del Producto:** Obtén información detallada sobre cada producto, incluyendo imágenes, descripción y precio.
+- **Exploración de Productos:** Descubre y explora nuestra selección de productos electrónicos.
+- **Detalles del Producto:** Obtén información detallada sobre cada producto, incluyendo imágenes, descripción, precio y stock.
 - **Filtrado por Categoría:** Navega fácilmente por categorías utilizando el menú de navegación o escribiendo el nombre de la categoría directamente en la barra de navegación.
 - **Detalles del Producto por ID:** Accede directamente a los detalles de un producto específico utilizando su ID en la URL.
 - **Carrito de Compras:** Agrega productos al carrito y visualiza un resumen de tus selecciones.
-- **Acceso Rápido al Carrito:** Accede al carrito desde el navbar o la barra de navegación.
+- **Acceso Rápido al Carrito:** Accede al carrito desde el navbar o la barra de navegación o al agregar un producto.
 - **Persistencia de Datos:** Los productos en el carrito se almacenan en el Local Storage para mantener la información entre sesiones.
 
 ## Proceso de Compra
 
 1. **Carrito de Compras:** Visualiza y gestiona los productos en tu carrito.
 2. **Detalles del Producto en el Carrito:** Mira el nombre, cantidad a comprar, precio unitario y subtotal de cada producto.
-3. **Eliminar Productos:** Elimina productos individualmente con un botón "Eliminar".
+3. **Elimina Productos:** Elimina productos individualmente con un botón "Eliminar".
 4. **Total de la Compra:** Visualiza el total de todos los productos en tu carrito.
 5. **Limpiar Carrito:** Elimina todos los productos del carrito con un botón "Limpiar Carrito".
 6. **Checkout:** Finaliza tu compra ingresando tus datos personales (nombre, teléfono, email) y crea tu orden.
@@ -37,6 +37,8 @@ _Tienda Digital Dreams es una app de e-commerce diseñado como proyecto del curs
 - **Colección de Órdenes:** Las órdenes generadas se guardan en otra colección en Firebase, incluyendo información detallada sobre los productos y la fecha de la orden.
 
 ## Demostración en Vivo 🚀
+
+[![Demo.gif](https://i.postimg.cc/kG2pDSnY/Demo.gif)](https://postimg.cc/sGRcNvG5)
 
 Puedes explorar una demostración del proyecto en vivo a través de Vercel. Para acceder a la demo, visita el siguiente enlace:
 
