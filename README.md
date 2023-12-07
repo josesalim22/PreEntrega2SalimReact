@@ -38,7 +38,7 @@ _Tienda Digital Dreams es una app de e-commerce diseñado como proyecto del curs
 
 ## Demostración en Vivo 🚀
 
-[![Demo.gif](https://i.postimg.cc/kG2pDSnY/Demo.gif)](https://postimg.cc/sGRcNvG5)
+![Demo](https://github.com/josesalim22/TiendaDigitalDreams-SalimReact/assets/131318882/eb173f2f-1830-4648-b649-cbc404e0019d)
 
 Puedes explorar una demostración del proyecto en vivo a través de Vercel. Para acceder a la demo, visita el siguiente enlace:
 
